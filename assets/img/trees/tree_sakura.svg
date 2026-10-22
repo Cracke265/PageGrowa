@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <filter id="sakura-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="sakuraGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFB7D5"/>
+      <stop offset="60%" stop-color="#F06292"/>
+      <stop offset="100%" stop-color="#C2185B"/>
+    </radialGradient>
+    <radialGradient id="sakuraLight" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFD6E8"/>
+      <stop offset="100%" stop-color="#F48FB1"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="150" cy="275" rx="75" ry="16" fill="#243329" opacity="0.6"/>
+  <!-- Dark Artistic Trunk -->
+  <path d="M 136 270 Q 142 200 134 175 L 105 145 L 118 138 L 140 162 L 152 140 L 162 162 L 186 138 L 198 145 L 166 175 Q 160 200 164 270 Z" fill="#5D4037"/>
+  <!-- Sakura Blossoms Canopy -->
+  <circle cx="100" cy="135" r="50" fill="url(#sakuraGrad)"/>
+  <circle cx="200" cy="135" r="50" fill="url(#sakuraGrad)"/>
+  <circle cx="150" cy="95" r="55" fill="url(#sakuraGrad)"/>
+  <circle cx="85" cy="145" r="38" fill="url(#sakuraLight)" filter="url(#sakura-glow)"/>
+  <circle cx="215" cy="145" r="38" fill="url(#sakuraLight)" filter="url(#sakura-glow)"/>
+  <circle cx="120" cy="115" r="46" fill="url(#sakuraLight)" filter="url(#sakura-glow)"/>
+  <circle cx="180" cy="115" r="46" fill="url(#sakuraLight)" filter="url(#sakura-glow)"/>
+  <circle cx="150" cy="80" r="42" fill="url(#sakuraLight)" filter="url(#sakura-glow)"/>
+  <!-- Falling Petals -->
+  <circle cx="95" cy="210" r="4" fill="#FF80AB"/>
+  <circle cx="210" cy="225" r="5" fill="#FF80AB"/>
+  <circle cx="170" cy="245" r="4" fill="#FF80AB"/>
+</svg>

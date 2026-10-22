@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <filter id="glow-gold8" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="foliageGold" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="85%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </radialGradient>
+    <radialGradient id="coinGrad8" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fde047"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </radialGradient>
+    <linearGradient id="trunkGrad8" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#854d0e"/>
+      <stop offset="100%" stop-color="#3c1803"/>
+    </linearGradient>
+  </defs>
+  <!-- Soil Mound -->
+  <ellipse cx="150" cy="278" rx="85" ry="18" fill="#142117" opacity="0.8"/>
+  <ellipse cx="150" cy="272" rx="70" ry="13" fill="#243329"/>
+  <!-- Trunk -->
+  <path d="M 126 272 Q 138 180 120 120 Q 148 165 152 110 Q 158 165 180 120 Q 166 180 174 272 Z" fill="url(#trunkGrad8)"/>
+  <!-- Golden Foliage Canopy -->
+  <circle cx="58" cy="115" r="35" fill="url(#foliageGold)" filter="url(#glow-gold8)"/>
+  <circle cx="95" cy="100" r="40" fill="url(#foliageGold)"/>
+  <circle cx="242" cy="115" r="35" fill="url(#foliageGold)" filter="url(#glow-gold8)"/>
+  <circle cx="205" cy="100" r="40" fill="url(#foliageGold)"/>
+  <circle cx="150" cy="65" r="56" fill="url(#foliageGold)" filter="url(#glow-gold8)"/>
+  <circle cx="125" cy="45" r="32" fill="#fef08a" opacity="0.6"/>
+  <circle cx="175" cy="48" r="32" fill="#fef08a" opacity="0.6"/>
+
+  <!-- Shimmering Golden Coins -->
+  <g filter="url(#glow-gold8)">
+    <circle cx="68" cy="125" r="11" fill="url(#coinGrad8)" stroke="#78350f" stroke-width="1.5"/>
+    <text x="68" y="129" font-size="11" font-weight="bold" fill="#78350f" text-anchor="middle" font-family="sans-serif">$</text>
+
+    <circle cx="108" cy="115" r="12" fill="url(#coinGrad8)" stroke="#78350f" stroke-width="1.5"/>
+    <text x="108" y="119" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle" font-family="sans-serif">$</text>
+
+    <circle cx="148" cy="72" r="14" fill="url(#coinGrad8)" stroke="#78350f" stroke-width="1.5"/>
+    <text x="148" y="77" font-size="13" font-weight="bold" fill="#78350f" text-anchor="middle" font-family="sans-serif">$</text>
+
+    <circle cx="188" cy="105" r="12" fill="url(#coinGrad8)" stroke="#78350f" stroke-width="1.5"/>
+    <text x="188" y="109" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle" font-family="sans-serif">$</text>
+
+    <circle cx="230" cy="125" r="11" fill="url(#coinGrad8)" stroke="#78350f" stroke-width="1.5"/>
+    <text x="230" y="129" font-size="11" font-weight="bold" fill="#78350f" text-anchor="middle" font-family="sans-serif">$</text>
+  </g>
+</svg>
